@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  
+  
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url(./bg.jpg) no-repeat center/cover;
+  text-align: center;
+  align-content: center;
+  color: #fefcbe;
+}
+
+.container h1 {
+  font-family: "MonteCarlo", cursive;
+  font-size: 15rem;
+  margin: -6rem 0 -3rem 6rem;
+  color: #cf8d11;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 3rem 0 0 6rem;
+}
+
+.timer div {
+  width: 6.5rem;
+}
+
+.timer p {
+  font-size: 6rem;
+}
