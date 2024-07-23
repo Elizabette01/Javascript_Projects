@@ -12,74 +12,20 @@
     <div class="box">
       <h1>Number guessing game</h1>
       <div class="input-content">
-        <h4>Choose a number between 1 and 20</h4>
-        <input type="text" name="" id="playernum">
+        <h4>Enter a number between 1 and 20</h4>
+        <input type="number" name="" id="playernum">
         <p id="wrongans"></p>
-        <button type="submit" onclick="playGame()">Submit</button>
+        <button type="submit" onclick="playGame()" id="submit">Submit</button>
+        <p class="chances">Chances left: <span id="chances"></span></p>
         <h6 id="result"></h6>
+
+        <button onclick="replay()">Replay</button>
       </div>
     </div>
   </div>
 
 
-  <script>
-    const minNum = 1;
-    const maxNum = 20;
-    const compNum = Math.floor(Math.random() * (maxNum - (minNum - 1))) + minNum;
-
-    console.log(compNum)
-
-    const playerNum = document.getElementById("playernum");
-    const wrongAns = document.getElementById("wrongans");
-    const result = document.getElementById("result");
-
-    const playGame = () => {
-
-      let attempts = 0
-      let running = true;
-
-      while(running){
-       
-        let  guess = Number(playerNum.value);
-        console.log(guess);
-        if(isNaN(guess)){
-          wrongAns.textContent = "Please enter a valid a naumber";
-          running = false;
-        }
-
-        else if (guess < minNum){
-          wrongAns.textContent = "Your Number is less than range";
-          running = false;
-        }
-
-        else if (guess > maxNum){
-          wrongAns.textContent = "Your Number is greater than range";
-          running = false;
-        }
-
-        else {
-          attempts++;
-          if(guess < compNum){
-            result.textContent = "too low! try again";
-            result.style.color = "red"
-          }
-
-          else if(guess > compNum){
-            result.textContent = "too High! try again";
-            result.style.color = "red"
-          }
-
-          else{
-            result.textContent = `congratulations!!! You win. the answer is ${compNum}. it took you ${attempts} attempts`;
-            result.style.fontWeight = "700";
-          }
-        }
-        
-      }
-
-    }
-
-
+  <script src="./guess.js">
     
   </script>
 </body>
