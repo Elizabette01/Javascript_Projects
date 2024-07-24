@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific calculator- using Javascript</title>
+
+  <link rel="stylesheet" href="sci_calc.css">
+
+   <!-- google fonts link -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="calculator">
+      <input type="text" name="display" id="display" placeholder="0" disabled>
+      <div>
+        <button class="" onclick="rad()">RAD</button>
+        <button onclick="deg()">DEG</button>
+        <button class="" onclick="fact()">x!</button>
+        <button class="btn" >(</button>
+        <button class="btn" >)</button>
+        <button class="operators" onclick="clearDisplay()">AC</button>
+        <button class="operators" onclick="deleteNumber()">DE</button>
+        <button class="operators" onclick="percentage()" id="percent">%</button>
+        <button class="operators btn">÷</button>
+      </div>
+      <div>
+        <button class="">abs</button>
+        <button class="" onclick="nthpow()">x<sup>y</sup></button>
+        <button class="" onclick="cube()">x<sup>3</sup></button>
+        <button class="" onclick="square()">x<sup>2</sup></button>
+        <button class="" onclick="log()">log</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="operators btn" >x</button>
+      </div>
+      <div>
+        <button class="btn">,</button>
+        <button class="" onclick="squarert()">√x</button>
+        <button class="" onclick="cubert()">∛x</button>
+        <button class="" onclick="nthrt()"><sup>y</sup>√x</button>
+        <button class="" onclick="ln()">ln</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="operators btn" >-</button>
+      </div>
+      <div>
+        
+        <button class="" onclick="sin()">sin</button>
+        <button class="" onclick="cos()">cos</button>
+        <button class="" onclick="tan()">tan</button>
+        <button class="" onclick="exp()">e<sup>x</sup></button>
+        <button class="" onclick="econ()">e</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="operators btn" >+</button>
+      </div>
+      <div>
+        
+        <button class="" onclick="sinh()">asin</button>
+        <button class="" onclick="cosh()">acos</button>
+        <button class="" onclick="tanh()">atan</button>
+        <button class="" onclick="pi()">π</button>
+        <button class="btn">00</button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button class="equal" onclick="equalTo()">=</button>
+      </div>
+      
+    </div>
+
+    <p>Please Note: To calculate the nth power and nth root, write the base number first, then the root number, separated by a comma (,). eg 5<sup>7</sup> will be written as 5,7</p>
+  </div>
+
+  <script src="./sci_calc.js"></script>
+</body>
+</html>

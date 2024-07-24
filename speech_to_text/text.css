@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #023047, #219EBC);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #e0e2db;
+  text-transform: capitalize;
+}
+
+span{
+  color: #ffb703;
+  padding-bottom: 5px;
+  padding-inline: 1rem;
+  border-bottom: 10px solid ;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 50%;
+  height: 50vh;
+  background: rgb(224, 226, 219, 0.5);
+  box-shadow: 2px 4px 40px rgb(2, 48, 71, 0.4);
+  color: #023047;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  padding: 1rem;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #023047;
+}
+
+textarea:focus {
+  border: 5px solid #023047;
+}
+
+.container > div {
+  display: flex;
+  gap: 2rem;
+}
+
+select {
+  flex: 1;
+  padding: 0 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  /* appearance: none; - Used to remove the defaultselect dropdown icon */
+  background: rgb(224, 226, 219, 0.5);
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  background-color: #ffb703;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #023047;
+  display: flex;
+  align-items: center;
+  transition: all 300ms ;
+}
+
+.btn.stop{
+  background-color: #219EBC;
+  transition: all 300ms ;
+}
+
+.btn:hover {
+  background-color: #fb8500;
+  color: #e0e2db;
+  cursor: pointer;
+  box-shadow: 2px 4px 5px rgb(2, 48, 71, 0.6);
+}
+
+.btn.stop:hover{
+  background-color: #023047;
+}
+
+p {
+  margin-top: -40px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e0e2db;
+  letter-spacing: 2px;
+  height: 1.5rem;
+}
