@@ -60,6 +60,10 @@ span {
   flex-grow: 1;
 }
 
+.progress-details h2 {
+  font-size: 1.25rem;
+}
+
 .progress-Bar-container {
   width: 100%;
   height: 20px;
@@ -69,18 +73,20 @@ span {
 }
 
 .progress-bar {
-  width: 70%;
   height: 100%;
   background-color: rgb(183, 104, 201);
   border-radius: 30px;
 }
 
 .progress-num {
-  padding: 10px;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
   background: #773797;
   color: #f2f2f280;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 /* ====== To-Do List Input ====== */
@@ -196,6 +202,11 @@ span {
 
 .todos li label {
   flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .todo-btns {
